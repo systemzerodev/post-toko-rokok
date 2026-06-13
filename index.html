@@ -24,18 +24,27 @@
 
           <div class="product-grid">
             <button class="product-card">
-              <span>Surya Pro</span>
-              <span>Rp38.000</span>
+              <div class="product-image"></div>
+
+              <span class="product-name"> Surya Pro </span>
+
+              <span class="product-price"> Rp38.000 </span>
             </button>
 
             <button class="product-card">
-              <span>GG Merah</span>
-              <span>Rp30.000</span>
+              <div class="product-image"></div>
+
+              <span class="product-name"> GG Merah </span>
+
+              <span class="product-price"> Rp30.000 </span>
             </button>
 
             <button class="product-card">
-              <span>Esse Berry</span>
-              <span>Rp34.000</span>
+              <div class="product-image"></div>
+
+              <span class="product-name"> Esse Berry </span>
+
+              <span class="product-price"> Rp34.000 </span>
             </button>
           </div>
         </section>
@@ -43,9 +52,9 @@
         <section class="cart">
           <h2>Keranjang</h2>
 
-          <ul class="cart-items">
-            <li>Belum ada item</li>
-          </ul>
+          <ul class="cart-items"></ul>
+
+          <p class="empty-cart">Belum ada item</p>
 
           <div class="cart-summary">
             <p>Total: Rp0</p>
@@ -55,5 +64,31 @@
         </section>
       </section>
     </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Surya Pro</h2>
+
+        <div class="form-group">
+          <label>Satuan</label>
+
+          <select>
+            <option>Batang</option>
+            <option>Bungkus</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Jumlah</label>
+
+          <input type="number" min="1" value="1" />
+        </div>
+
+        <div class="modal-actions">
+          <button>Batal</button>
+          <button>Tambah</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
