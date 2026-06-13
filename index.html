@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POS Toko Rokok Maju Jaya</title>
-  </head>
+    <title>POS Toko Rokok</title>
 
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
   <body>
     <header>
       <h1>POS TOKO ROKOK</h1>
@@ -13,32 +14,45 @@
     </header>
 
     <main>
-      <section class="products">
-        <h2>Produk</h2>
-
-        <ul>
-          <li>
-            <a href="#">Surya Pro</a>
-          </li>
-
-          <li>
-            <a href="#">GG Merah</a>
-          </li>
-
-          <li>
-            <a href="#">Esse Berry</a>
-          </li>
-        </ul>
+      <section class="search-section">
+        <input type="text" placeholder="Cari produk..." />
       </section>
 
-      <section class="cart">
-        <h2>Keranjang</h2>
+      <section class="pos-container">
+        <section class="products">
+          <h2>Produk</h2>
 
-        <ul>
-          <li>Belum ada barang</li>
-        </ul>
+          <div class="product-grid">
+            <button class="product-card">
+              <span>Surya Pro</span>
+              <span>Rp38.000</span>
+            </button>
 
-        <p>Total: Rp0</p>
+            <button class="product-card">
+              <span>GG Merah</span>
+              <span>Rp30.000</span>
+            </button>
+
+            <button class="product-card">
+              <span>Esse Berry</span>
+              <span>Rp34.000</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="cart">
+          <h2>Keranjang</h2>
+
+          <ul class="cart-items">
+            <li>Belum ada item</li>
+          </ul>
+
+          <div class="cart-summary">
+            <p>Total: Rp0</p>
+
+            <button class="checkout-btn">Bayar</button>
+          </div>
+        </section>
       </section>
     </main>
   </body>
